@@ -34,9 +34,9 @@ python train.py
 to train the network on your image dataset, the final model will be stored. You can also change the corresponding training parameters in the `config.py`.<br/>
 
 ### Evaluate
-To evaluate the model's performance on the test dataset, you can run `evaluate.py`.<br/>
+To evaluate the model's performance on the test dataset, you can run `evaluate.py`.
 
-The structure of the network is defined in `model_definition.py`, you can change the network structure to whatever you like.
+The structure of the network is defined in `model.py`, you can change the network structure to whatever you like.
 
 ### Serving
 After you pull the tensorflow serving from docker hub, run tensorflow serving service:
