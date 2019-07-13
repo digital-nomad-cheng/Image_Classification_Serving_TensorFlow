@@ -40,6 +40,7 @@ The structure of the network is defined in `model_definition.py`, you can change
 
 ### Serving
 After you pull the tensorflow serving from docker hub, run tensorflow serving service:
-```sudo docker run -it -p 8501:8501 -v "$(pwd)/saved_model/flower_photos_serving/:/models/flower_photos_serving" -e MODEL_NAME=flower_photos_serving tensorflow/serving
+```
+sudo docker run -it -p 8501:8501 -v "$(pwd)/saved_model/flower_photos_serving/:/models/flower_photos_serving" -e MODEL_NAME=flower_photos_serving tensorflow/serving
 ```
 Then use ```python evaluate_serving.py``` to evaluate the model on tensorflow serving.
