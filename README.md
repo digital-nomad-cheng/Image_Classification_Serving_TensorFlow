@@ -37,3 +37,9 @@ to train the network on your image dataset, the final model will be stored. You 
 To evaluate the model's performance on the test dataset, you can run `evaluate.py`.<br/>
 
 The structure of the network is defined in `model_definition.py`, you can change the network structure to whatever you like.
+
+### Serving
+After you pull the tensorflow serving from docker hub, run tensorflow serving service:
+```sudo docker run -it -p 8501:8501 -v "$(pwd)/saved_model/flower_photos_serving/:/models/flower_photos_serving" -e MODEL_NAME=flower_photos_serving tensorflow/serving
+```
+Then use ```python evaluate_serving.py``` to evaluate the model on tensorflow serving.
