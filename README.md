@@ -21,12 +21,9 @@ ${dataset_root}
 |   |——class_name_1
 |   |——class_name_2
 |   |——class_name_3
-|——test
-    |——class_name_0
-    |——class_name_1
-    |——class_name_2
-    |——class_name_3
+
 ```
+You can use the train_val_split.py script to split train val dataset.
 
 ### Train
 Run the script
