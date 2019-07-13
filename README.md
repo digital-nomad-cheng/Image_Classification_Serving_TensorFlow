@@ -2,7 +2,9 @@
 This repo will show you the procedure of solving an image classification problem with tensorflow2.0 and serving the trained model.
 
 ## How to use
-
+### Dataset
+TensorFlow flower_photo dataset:
+http://download.tensorflow.org/example_images/flower_photos.tgz
 ### Requirements
 + python3.6.8
 + pip install tensorflow-gpu==1.12.0
@@ -59,5 +61,6 @@ sudo docker run -it -p 8501:8501 -v "$(pwd)/saved_model/flower_photos_serving/:/
 ```
 Then use ```python evaluate_serving.py``` to evaluate the model on tensorflow serving.
 
+Todo:
 - [ ] using batching strategy on serving side to test latency
 
