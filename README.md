@@ -1,11 +1,11 @@
-# Image-Classification-and-Serving-TensorFlow2
+# Image-Classification-and-Serving-TensorFlow
 This repo will show you the procedure of solving an image classification problem with tensorflow2.0 and serving the trained model.
 
 ## How to use
 
 ### Requirements
 + python3.6.8
-+ pip install tensorflow-gpu==2.0.0b1
++ pip install tensorflow-gpu==1.12.0
 + The file directory of the dataset should look like this: 
 ```
 ${dataset_root}
