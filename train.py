@@ -19,8 +19,7 @@ train_generator, valid_generator, \
 train_num, valid_num, \
 class_weights = get_datasets()
 
-# start training
-model = create_model()
+model = create_model(model_name='shufflenet', use_regularizer=True)
 
 model.fit_generator(train_generator,
                     epochs=EPOCHS,

@@ -1,8 +1,8 @@
 # training parameters
-DATASET = 'flower_photos'
-NUM_CLASSES = 5
+DATASET = 'beard'
+NUM_CLASSES = 8
 
-EPOCHS = 1
+EPOCHS = 100
 BATCH_SIZE = 32
 image_height = 224
 image_width = 224
